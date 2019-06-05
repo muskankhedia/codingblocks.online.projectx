@@ -1,5 +1,6 @@
 import Route from '@ember/routing/route'
 import env from 'codingblocks-online/config/environment'
+import { inject as service } from '@ember/service'
 
 export default class LoginRoute extends Route {
 
