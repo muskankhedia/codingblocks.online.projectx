@@ -17,6 +17,7 @@ export default Component.extend({
     }
   },
 
+  // eslint-disable-next-line require-yield
   fetchRatingsTask: task(function* () {
     this.store.query('rating', {
       custom: { ext: 'url', url: `course/${this.courseId}` },

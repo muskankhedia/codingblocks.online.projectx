@@ -12,6 +12,7 @@ export default Route.extend({
             replace: true
         }
     },
+    // eslint-disable-next-line no-unused-vars
     model (params) {
         return hash({
             runAttempt: this.modelFor('attempt'),
@@ -31,6 +32,7 @@ export default Route.extend({
         controller.set("sideBarCollapsed", true);
         controller.set("attemptController", this.controllerFor('attempt'))
     },
+    // eslint-disable-next-line no-unused-vars
     renderTemplate(controller, model) {
         this.render()
         this.render("attempt.content.index.heading", {
@@ -94,6 +96,7 @@ export default Route.extend({
               }
           }
           catch(err){
+              // eslint-disable-next-line no-console
               console.log(err)
           }
           

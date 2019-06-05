@@ -1,3 +1,4 @@
+/* eslint-disable ember/avoid-leaking-state-in-ember-objects */
 import Route from '@ember/routing/route';
 
 export default Route.extend({

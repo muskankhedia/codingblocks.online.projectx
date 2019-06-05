@@ -1,3 +1,5 @@
+/* eslint-disable no-undef */
+/* eslint-disable no-unused-vars */
 import Service from '@ember/service';
 
 export default Service.extend({
@@ -53,6 +55,7 @@ export default Service.extend({
     try {
       this.player.seekTo(time, true)
     } catch (e) {
+      // eslint-disable-next-line no-console
       console.log("Error: Cannot seek youtube player", e)
     }
   }

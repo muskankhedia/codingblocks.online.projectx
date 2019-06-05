@@ -7,6 +7,7 @@ export default class TalkjsInboxComponent extends Component {
   didInsertElement () {
     this._super(...arguments) 
 
+    // eslint-disable-next-line no-undef
     Talk.ready
       .then(() => this.talkjs.setupSession())
       .then(talkSession => {

@@ -11,6 +11,7 @@ export default Route.extend({
     }
     return this._super(...arguments)
   },
+  // eslint-disable-next-line no-unused-vars
   afterModel(model) {
     this.set('headData.title', 'Coding Blocks Online | Home')
   },

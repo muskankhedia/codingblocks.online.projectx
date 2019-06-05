@@ -26,7 +26,6 @@ export default Controller.extend({
     if (!questionSubmission) {
       question.set("markedChoices", [])
     } else {
-      console.log(questionSubmission)
       question.set("markedChoices", questionSubmission["marked-choices"])
     }
     return question
@@ -42,6 +41,7 @@ export default Controller.extend({
   markChoice: task( function *(question, choice) {
     let submission = this.get('quizAttempt.submission')
     if (!Array.isArray(submission)) {
+      // eslint-disable-next-line no-console
       console.error('Quiz Submission must be an array')
       submission = []
     } 

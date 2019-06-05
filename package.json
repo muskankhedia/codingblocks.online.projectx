@@ -24,7 +24,7 @@
     "@ember/optional-features": "^0.6.3",
     "@firebase/app": "^0.3.13",
     "@firebase/database": "^0.3.16",
-    "babel-eslint": "^8.0.0",
+    "babel-eslint": "^8.2.6",
     "broccoli-asset-rev": "^2.7.0",
     "ember-ajax": "^4.0.1",
     "ember-auto-import": "^1.2.21",

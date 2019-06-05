@@ -25,6 +25,7 @@ export default Component.extend({
   },
   getLeaderBoardTask: task(function * () {
     const runId = this.get('run.id')
+    // eslint-disable-next-line no-unused-vars
     const leaderboard = yield this.api.request(`/runs/${runId}/leaderboard`).catch(err => {
       this.set("isErrored", true)
     })

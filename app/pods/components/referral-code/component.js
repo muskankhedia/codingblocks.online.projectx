@@ -33,12 +33,13 @@ export default Component.extend({
       window.open(`https://www.facebook.com/sharer/sharer.php?u=online.codingblocks.com&quote=${shareText}`, 'facebook-share', 'width=860,height=840,toolbar=0,menubar=0')
     },
     selectText(containerid) {
+      var range;
       if (document.selection) { // IE
-          var range = document.body.createTextRange();
+          range = document.body.createTextRange();
           range.moveToElementText(document.getElementById(containerid));
           range.select();
       } else if (window.getSelection) {
-          var range = document.createRange();
+          range = document.createRange();
           range.selectNode(document.getElementById(containerid));
           window.getSelection().removeAllRanges();
           window.getSelection().addRange(range);

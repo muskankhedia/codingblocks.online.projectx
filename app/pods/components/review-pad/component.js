@@ -1,4 +1,5 @@
 import Component from '@ember/component';
+// eslint-disable-next-line no-unused-vars
 import EmberObject, { computed } from '@ember/object';
 
 export default Component.extend({

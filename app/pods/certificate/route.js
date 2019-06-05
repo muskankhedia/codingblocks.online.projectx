@@ -8,6 +8,7 @@ export default Route.extend({
     return this.api.request('certificates/' + licenseKey);
   },
   actions: {
+    // eslint-disable-next-line no-unused-vars
     error (error, transition) {
       if (isBadRequestError(error) || isNotFoundError(error)) {
         // https://github.com/emberjs/ember.js/issues/12624

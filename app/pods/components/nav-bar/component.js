@@ -21,6 +21,7 @@ export default class navBarComponent extends Component {
 
     didInsertElement () {
       this._super(...arguments)
+      // eslint-disable-next-line no-unused-vars
       this.$(document).on("click", e => {
         this.set('activeTab', false)
       });

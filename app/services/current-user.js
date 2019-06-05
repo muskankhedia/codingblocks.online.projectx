@@ -1,3 +1,5 @@
+/* eslint-disable ember/require-super-in-init */
+/* eslint-disable ember/avoid-leaking-state-in-ember-objects */
 import Service from '@ember/service';
 import { inject as service } from '@ember/service';
 import { alias }  from '@ember/object/computed';

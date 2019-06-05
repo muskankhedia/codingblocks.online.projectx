@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import Route from '@ember/routing/route';
 import { hash } from 'rsvp';
 

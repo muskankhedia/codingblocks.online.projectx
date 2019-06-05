@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import Route from '@ember/routing/route';
 import { inject as service } from '@ember/service';
 import DS from 'ember-data';
@@ -25,6 +26,7 @@ export default Route.extend(AuthenticatedRouteMixin, {
 							return this.transitionTo(url)
 						})
 						.catch(e => {
+							// eslint-disable-next-line no-console
 							console.error(e)
 							this.transitionTo('404')
 						})

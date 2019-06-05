@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import Route from '@ember/routing/route';
 import { inject as service } from '@ember-decorators/service';
 
@@ -42,6 +43,7 @@ export default class LogoutRoute extends Route {
 
           return player.destroyRecord ()
         })
+        // eslint-disable-next-line no-unused-vars
         .then ((_) => {
           return logout ()
         })

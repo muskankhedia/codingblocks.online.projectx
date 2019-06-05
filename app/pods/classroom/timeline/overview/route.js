@@ -5,6 +5,7 @@ import { inject as service } from '@ember/service';
 export default Route.extend({
   api: service('api'),
   headData: service(),
+  // eslint-disable-next-line no-unused-vars
   model (params) {
     const courseId = this.modelFor('classroom.timeline').get("run.course.id")
     return hash({
@@ -24,6 +25,7 @@ export default Route.extend({
             data: {
                 order: "latest"
             }
+        // eslint-disable-next-line no-console
         }).catch(err => console.error(err)).then(() => [])
     });
   },

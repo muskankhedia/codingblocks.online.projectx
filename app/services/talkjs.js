@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import Service from '@ember/service'
 import { inject as service } from '@ember-decorators/service'
 import config from 'codingblocks-online/config/environment'
@@ -10,7 +11,6 @@ export default class TalkjsService extends Service {
   @computed ('currentUser.user')
   get currentChatUser () {
     const user = this.currentUser.user
-    console.log(user.id)
     const me = new Talk.User({
       id: user.id,
       name: user.firstname,

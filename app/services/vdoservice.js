@@ -22,6 +22,7 @@ export default class VdoserviceService extends Service {
       startTime,
       noAutoHeight:true
     }
+    // eslint-disable-next-line no-undef
     let video = new VdoPlayer(embedInfo)
     this.set('video', video)
   }

@@ -18,6 +18,7 @@ export default Route.extend({
     controller.set("content", model.content)
     controller.set("payload", model.payload)
   },
+  // eslint-disable-next-line no-unused-vars
   renderTemplate(controller, model) {
     this.render()
     this.render("attempt.content.index.heading", {

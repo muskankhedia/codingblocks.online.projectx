@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { inject as service } from '@ember/service';
 import Route from '@ember/routing/route';
 import env from "codingblocks-online/config/environment";

@@ -1,6 +1,7 @@
 import Component from '@ember/component';
 
 export default Component.extend({
+  // eslint-disable-next-line ember/avoid-leaking-state-in-ember-objects
   offerings: [
     {
       name: 'Comprehensive learning',

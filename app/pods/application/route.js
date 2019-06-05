@@ -1,3 +1,5 @@
+/* eslint-disable no-console */
+/* eslint-disable no-unused-vars */
 import Route from '@ember/routing/route';
 import ApplicationRouteMixin from 'ember-simple-auth/mixins/application-route-mixin';
 import { inject as service } from '@ember/service';
@@ -51,6 +53,7 @@ export default Route.extend(ApplicationRouteMixin, {
         if (this.get('session.isAuthenticated')) {
           return this.currentUser.load().then (user => {
             try {
+              // eslint-disable-next-line no-undef
               OneSignal.getUserId ().then (userId => {
                 if (! userId) {
                   throw new Error ('player ID not found')
